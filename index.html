@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/src/img/fav.png" type="image/x-icon">
+  <title>Luna's Retro</title>
+  <link rel="stylesheet" href="/src/styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="marquee">✨ Welcome to Luna's Retro Corner! ✨</div>
+  <h1>✧･ﾟ: *✧･ﾟ:* Luna's D&D Adventures *:･ﾟ✧*:･ﾟ✧</h1>
+  <div class="center-image" style="position: absolute; top: 5px; left: 20px;">
+    <img
+      src="https://static.vecteezy.com/system/resources/previews/045/163/485/non_2x/sticker-of-a-natural-one-dice-roll-with-floral-elements-png.png"
+      alt="D20 Dice" style="width: 4cm; height: 4cm; transform: rotate(-12deg);">
+  </div>
+  <div class="center-image" style="position: absolute; top: -97px; right: 30px;">
+    <img src="/src/img/logo.png" alt="D20 Dice" style="width: 4cm; height: 8cm;">
+  </div>
+
+  <nav>
+    <div>
+      <a href="about.html" class="retro-button">About Luna</a>
+      <a href="game.html" class="retro-button">Character Play</a>
+      <a href="gallery.html" class="retro-button">View Gallery</a>
+    </div>
+  </nav>
+  <!-- <p class="blink glow">Welcome to Luna’s Lair!</p> -->
+  <p class="blink glow" style="padding-left: 1.5cm;">Welcome to Luna's Retro Lair - Explore the adventures of my D&D
+    world!</p>
+
+  <div class="center-image" style="position: absolute; top: 150px;">
+    <img src="/src/img/1.png" alt="D20 Dice" style="width: 7cm;">
+  </div>
+  <div class="center-image" style="position: absolute; top: 180px; right: 0;">
+    <img src="/src/img/2.png" alt="D20 Dice" style="width: 8cm;">
+  </div>
+  <div class="avatar"></div>
+  <h2 style="text-shadow: 2px 2px #ff00ff;">Luna the Brave</h2>
+  <h2>What's New?</h2>
+  <div class="updates">
+    <div class="card">
+      <h3><u>Adventure Logs</u></h3>
+      <p>Luna discovered rare gems during her latest mining expedition!</p>
+    </div>
+    <div class="card">
+      <h3><u>Additions</u></h3>
+      <p>Check out the new pixel art in the Gallery section.</p>
+    </div>
+  </div>
+
+
+  <div class="text-center mt-4">
+    <p class="text-xs text-gray-600">
+      🌟 Last Updated:
+      <script>document.write(new Date().toLocaleDateString());</script> 🌟
+    </p>
+  </div>
+
+  <audio autoplay loop>
+    <source src="/src/songs/action.mp3" type="audio/mpeg">
+  </audio>
+  <button id="mute-button" class="mute-button">
+    <i class="fas fa-volume-mute"></i>
+  </button>
+  <footer>
+    <p>© 2024 Luna's Retro Lair - All rights reserved</p>
+    <p>Made with 💚 and ⚔️ in the 90s spirit</p>
+  </footer>
+  <script src="/src/script.js"></script>
+  <script src="/src/songs/mute.js"></script>
+</body>
+
+</html>

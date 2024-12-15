@@ -1,0 +1,139 @@
+:root {
+    --primary-bg: #2c3e50;
+    --secondary-bg: #34495e;
+    --accent-color: #ff00ff;
+    --text-color: #333;
+    --light-bg: #ecf0f1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: white; */
+    box-shadow: 0px 0px 10px lime;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.header {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.tabs {
+    display: flex;
+    color: white;
+}
+
+.tab {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 2px solid lime;
+}
+
+.tab:hover {
+    background-color: #f600f67b;
+    color: yellow;
+    text-shadow: 0 0 5px magenta;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.character-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.stat-section {
+    /* background-color: #f4f4f4; */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgb(0, 255, 213);
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e076;
+    border-radius: 13px;
+    padding: 3px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 20px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+    max-width: 100%;
+}
+
+.button {
+    display: inline-block;
+    background-color: #f600f6b7;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    max-width: fit-content;
+}
+
+.button:hover {
+    background-color: #f600f67b;
+    box-shadow: 0 0 20px yellow;
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.skill-item {
+    border: 2px solid lime;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#storyOutput {
+    border: 2px dashed #bdc3c7;
+    padding: 15px;
+    margin-top: 15px;
+    min-height: 100px;
+}
+
+@media (max-width: 768px) {
+    .character-grid, .skill-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.ascii-border {
+    font-family: monospace;
+    white-space: pre;
+    color: #00ff00;
+}

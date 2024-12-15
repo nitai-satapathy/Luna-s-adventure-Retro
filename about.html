@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/src/img/fav.png" type="image/x-icon">
+  <title>About Luna</title>
+  <link rel="stylesheet" href="/src/styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <a href="index.html"><h2>| Home</h2></a>
+    <a href="game.html"><h2>| Character Play |</h2></a>
+    <a href="gallery.html"><h2>Gallery |</h2></a>
+  </nav>
+  <h1>About Luna</h1>
+  <div class="avatar"></div>
+  <h2>Luna the Brave</h2>
+  <div class="bio">
+    <div class="story-section">
+      <div class="head">
+        <h2><u>Origin Tale</u></h2>
+      </div>
+      <p>In the echoing halls of her mountain home, Luna discovered her true calling wasn't just mining stones, but carving her own legendary path...</p>
+
+      <div class="interactive-elements">
+        <button class="magic-button" onclick="generateQuest()">Summon Random Quest</button>
+      </div>
+
+      <div id="adventure-log">
+        Your adventure awaits...
+      </div>
+    </div>
+    <table>
+      <tr>
+        <th>Trait</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td>Species</td>
+        <td>Dwarf 🛡️</td>
+      </tr>
+      <tr>
+        <td>Abilities</td>
+        <td>Darkvision, Dwarven Resilience, Stonecunning 🪨</td>
+      </tr>
+      <tr>
+        <td>Languages</td>
+        <td>Dwarvish, Giant 🗣️</td>
+      </tr>
+      <tr>
+        <td>Inventory</td>
+        <td>🪓Greataxe, Handaxes, Holy Symbol, Parchments 📜</td>
+      </tr>
+      <tr>
+        <td>Currency</td>
+        <td>💰33 GP</td>
+      </tr>
+    </table>
+  </div>
+  <div class="fun">
+    <h2><u>Fun Facts About Luna</u></h2>
+    <p><strong>Favorite Weapon:</strong> Greataxe</p>
+    <p><strong>Special Ability:</strong> Dwarven Resilience</p>
+    <p><strong>Favorite Hobby:</strong> Mining gems</p>
+  </div>
+  <audio autoplay loop>
+    <source src="/src/songs/action.mp3" type="audio/mpeg">
+  </audio>
+  <button id="mute-button" class="mute-button">
+    <i class="fas fa-volume-mute"></i>
+  </button>
+  <footer>
+    <p>© 2024 Luna's Retro Lair - All rights reserved</p>
+    <p>Made with 💚 and ⚔️ in the 90s spirit</p>
+  </footer>
+  <script src="src/quests.js"></script>
+  <script src="/src/songs/mute.js"></script>
+</body>
+
+</html>

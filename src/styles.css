@@ -1,0 +1,455 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-image: url('/src/img/3ohhwNqFMnb7wZgNnq.webp');
+  color: lime;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.blink {
+  font-size: 1.5em;
+  color: rgb(255, 0, 0);
+  animation: blink 1s steps(1, end) infinite;
+}
+
+.glow {
+  text-shadow: 0 0 10px lime;
+}
+
+
+h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px #ff00ff;
+}
+
+
+.fun {
+  margin: 10px;
+  margin-top: 1cm;
+  margin-left: 15cm;
+  max-width: fit-content;
+  max-height: fit-content;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 0px 10px rgb(0, 255, 213);
+}
+
+.marquee {
+  background: neon-green;
+  color: rgb(244, 244, 244);
+  font-size: 1.5em;
+  padding: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: 0px 0px 10px lime;
+}
+
+a {
+  text-decoration: none;
+  color: magenta;
+  font-weight: bold;
+  padding: 10px;
+}
+
+a:hover {
+  color: yellow;
+  text-shadow: 0 0 5px magenta;
+}
+
+.hit-counter {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.retro-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: magenta;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 0 10px lime;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.retro-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px yellow;
+}
+
+ul {
+  list-style-type: square;
+  color: magenta;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+li {
+  padding: 5px 0;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black;
+  color: lime;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-shadow: 2px 2px magenta;
+}
+
+.fun-facts {
+  list-style-type: disc;
+  margin: 20px auto;
+  padding: 0;
+  max-width: 600px;
+  color: lime;
+}
+
+.fun-facts li {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  text-shadow: 1px 1px magenta;
+}
+
+
+.avatar {
+  margin: 20px auto;
+  border: 3px solid lime;
+  box-shadow: 0 0 10px magenta;
+  width: 200px;
+  height: 200px;
+  background-image: url('/src/img/alfzmyle-brom-pixelart.gif');
+  background-size: cover;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 600px;
+  color: magenta;
+  box-shadow: 0px 0px 15px lime;
+}
+
+th, td {
+  border: 2px solid lime;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+th {
+  background-color: black;
+  color: lime;
+  text-shadow: 1px 1px magenta;
+}
+
+td {
+  background-color: black;
+  color: magenta;
+}
+
+a {
+  text-decoration: none;
+  color: magenta;
+  font-weight: bold;
+  padding: 10px;
+  display: inline-block;
+}
+
+a:hover {
+  color: yellow;
+  text-shadow: 0 0 5px magenta;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.updates {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px;
+}
+
+.card {
+  padding: 15px;
+  border: 2px solid lime;
+  background-color: black;
+  color: magenta;
+  box-shadow: 0 0 10px magenta;
+  max-width: 200px;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0 0 15px yellow;
+  transform: scale(1.05);
+}
+
+
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black;
+  color: lime;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-shadow: 2px 2px magenta;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border: 3px solid lime;
+  box-shadow: 0 0 10px magenta;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px yellow;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: magenta;
+  font-weight: bold;
+  padding: 10px;
+  display: inline-block;
+}
+
+a:hover {
+  color: yellow;
+  text-shadow: 0 0 5px magenta;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black;
+  color: lime;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-shadow: 2px 2px magenta;
+}
+
+.head {
+    background-color: black;
+    color: lime;
+    text-shadow: 1px 1px magenta;
+}
+
+
+form {
+  margin: 20px auto;
+  padding: 20px;
+  border: 3px solid lime;
+  box-shadow: 0px 0px 15px magenta;
+  background-color: black;
+  color: magenta;
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.dlogo{
+  max-width: 8cm;
+  max-height: 5cm;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  bottom: 160px;
+}
+
+foter {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 120px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: calc(100% - 20px);
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid lime;
+  background-color: black;
+  color: lime;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px magenta;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: magenta;
+  color: black;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: yellow;
+  box-shadow: 0 0 15px lime;
+}
+
+a {
+  text-decoration: none;
+  color: magenta;
+  font-weight: bold;
+  padding: 10px;
+  display: inline-block;
+}
+
+a:hover {
+  color: yellow;
+  text-shadow: 0 0 5px magenta;
+}
+
+.mute-button {
+  background-color: #f0f0f0;
+  border: none;
+  color: #333;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition: background-color 0.3s ease;
+  animation: pulse 2s infinite;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.mute-button:hover {
+  background-color: #ddd;
+}
+
+.mute-button i {
+  margin: 0;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.clock {
+  font-size: 2em;
+  margin-top: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.story-section {
+  /* background-color: rgba(214, 205, 185, 0.2); */
+  background-color: black;
+  border-left: 4px solid var(--accent-gold);
+  padding: 20px;
+  font-style: italic;
+  position: relative;
+  box-shadow: 0px 0px 10px lime;
+}
+
+.interactive-elements {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.magic-button {
+  /* background-color: var(--accent-gold); */
+  border: none;
+  max-width: 10cm;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.magic-button:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+#adventure-log {
+  min-height: 100px;
+  border: 2px dashed var(--ink-dark);
+  margin-top: 20px;
+  padding: 10px;
+  font-weight: bold;
+  border: 2px dashed #bdc3c7;
+}
+
+.bio   {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 30px;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/src/img/fav.png" type="image/x-icon">
+  <title>Character Play</title>
+  <link rel="stylesheet" href="/src/styles.css">
+  <link rel="stylesheet" href="/src/game.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><h2>Home</h2></a>
+        <a href="about.html"><h2>About</h2></a>
+        <a href="gallery.html"><h2>Gallery</h2></a>
+    </nav>
+  <h1>Character Play</h1>
+  <div class="avatar"></div>
+  <div>
+    <div class="container">
+        <div class="header">
+            <h1>Luna: Legendary Dwarf Adventurer</h1>
+        </div>
+        <!-- <hr> -->
+
+        <div class="tabs">
+            <div class="tab" onclick="openTab('character')">Character</div>
+            <div class="tab" onclick="openTab('skills')">Skills</div>
+            <div class="tab" onclick="openTab('adventure')">Adventure</div>
+            <div class="tab" onclick="openTab('inventory')">Inventory</div>
+        </div>
+        <!-- <hr> -->
+
+        <div id="characterTab" class="tab-content">
+            <div class="character-grid">
+                <div class="stat-section">
+                    <h2>Character Stats</h2>
+                    <div>
+                        <strong>Level:</strong> 
+                        <span id="characterLevel">1</span>
+                    </div>
+                    <div>
+                        <strong>Experience Points:</strong>
+                        <div class="progress-bar">
+                            <div id="expBar" class="progress-bar-fill" style="width: 0%;">
+                                <span id="expPoints">0</span> / <span id="expToNextLevel">100</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button" onclick="gainExperience()">Gain XP</button>
+                </div>
+
+                <div class="stat-section">
+                    <h2>Basic Information</h2>
+                    <p><strong>Species:</strong> Dwarf</p>
+                    <p><strong>Darkvision:</strong> 60 feet</p>
+                    <p><strong>Special Traits:</strong> 
+                        Poison Resistance, Stonecunning
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="skillsTab" class="tab-content">
+            <h2>Skills & Abilities</h2>
+            <div class="skill-list" id="skillsList">
+                <div class="skill-item">
+                    <span>Strength</span>
+                    <span>14</span>
+                </div>
+                <div class="skill-item">
+                    <span>Dexterity</span>
+                    <span>12</span>
+                </div>
+                <div class="skill-item">
+                    <span>Constitution</span>
+                    <span>16</span>
+                </div>
+                <div class="skill-item">
+                    <span>Intelligence</span>
+                    <span>10</span>
+                </div>
+                <div class="skill-item">
+                    <span>Wisdom</span>
+                    <span>13</span>
+                </div>
+                <div class="skill-item">
+                    <span>Charisma</span>
+                    <span>8</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="adventureTab" class="tab-content">
+            <h2>Adventure Generator</h2>
+            <button class="button" onclick="generateStory()">Generate Adventure</button>
+            <div id="storyOutput">
+                Your epic tale awaits...
+            </div>
+            <div>
+                <h3>Dice Roller</h3>
+                <div class="dice-options">
+                    <select id="diceType">
+                        <option value="20">D20</option>
+                        <option value="12">D12</option>
+                        <option value="10">D10</option>
+                        <option value="8">D8</option>
+                        <option value="6">D6</option>
+                        <option value="4">D4</option>
+                    </select>
+                </div>
+                <button class="button" onclick="rollDice()">Roll Dice</button>
+                <p id="diceResult">🎲 You rolled a</p>
+            </div>
+        </div>
+
+        <div id="inventoryTab" class="tab-content">
+            <h2>Inventory Management</h2>
+            <div class="character-grid">
+                <div>
+                    <h3>Current Inventory</h3>
+                    <ul id="inventoryList">
+                        <li>Greataxe</li>
+                        <li>5x Handaxes</li>
+                        <li>Holy Symbol</li>
+                        <li>33 Gold Pieces</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Add New Item</h3>
+                    <input type="text" id="newItemName" placeholder="Item Name">
+                    <input type="number" id="newItemQuantity" placeholder="Quantity" min="1" value="1">
+                    <button class="button" onclick="addInventoryItem()">Add Item</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <audio autoplay loop>
+    <source src="/src/songs/action.mp3" type="audio/mpeg">
+  </audio>
+  <button id="mute-button" class="mute-button">
+    <i class="fas fa-volume-mute"></i>
+  </button>
+  <footer>
+    <p>© 2024 Luna's Retro Lair - All rights reserved</p>
+    <p>Made with 💚 and ⚔️ in the 90s spirit</p>
+  </footer>
+  <script src="src/quests.js"></script>
+  <script src="/src/game.js"></script>
+    <script src="/src/songs/mute.js"></script>
+</body>
+
+</html>
